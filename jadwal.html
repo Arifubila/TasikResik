@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasik Resik</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*SECTION 1*/
+      .arifubila_container {
+        background-image: none;
+        background-color: #043e2c;
+      }
+      .arifubila_judul-jadwal {
+        margin-bottom: 15%;
+      }
+      .arifubila_judul-jadwal h1 {
+        font-size: 40px;
+        font-weight: 600;
+      }
+      .arifubila_judul-jadwal p {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .arifubila_sec1-jadwal {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .arifubila_img-jadwal {
+        background-color: white;
+        padding: 18px;
+        position: relative;
+        left: 4.2%;
+        top: -15px;
+        bottom: 100%;
+        border-radius: 100px 0px 0px 0px;
+      }
+      .arifubila_img-jadwal img {
+        height: 65vh;
+        border-radius: 100px 0px 0px 0px;
+      }
+      /*END SECTION 1*/
+
+      /*SECTION 2*/
+      .arifubila_jj-sec2 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #172a19;
+        width: 40%;
+      }
+      .arifubila_card-panduansampah {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-around;
+        max-width: 1100px;
+        margin: 40px auto;
+        align-items: start;
+      }
+      .arifubila_cardpanduansampah {
+        width: calc(35% - 10px);
+        padding: 10px;
+      }
+      .arifubila_cardpanduansampah h2 {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .arifubila_cardpanduansampah p {
+        font-weight: 500;
+      }
+      .arifubila_top-ps {
+        background-color: #043e2c;
+        padding: 15px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .arifubila_bottom-ps {
+        border-radius: 0px 0px 10px 10px;
+        padding: 15px;
+        color: #172a19;
+        background-color: #bee744;
+      }
+      .arifubila_cardpanduansampah:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      /*END SECTION 2*/
+
+      /*SECTION 3*/
+      .arifubila_sec3 h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #172a19;
+        width: 30%;
+        margin-bottom: 40px;
+      }
+      .arifubila_card-jadwal {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+      }
+      .arifubila_cardj {
+        width: 18%;
+      }
+      .arifubila_top-jadwal {
+        text-align: center;
+        color: #172a19;
+        padding: 15px;
+        background-color: #bee744;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .arifubila_bottom-jadwal {
+        padding: 15px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #043e2c;
+        color: white;
+      }
+      /*END SECTION 3*/
+
+      /*RESPONSIVE*/
+      @media only screen and (max-width: 600px) {
+        /*SECTION 1*/
+        .arifubila_container {
+          height: 10%;
+          padding: 5px;
+        }
+        .arifubila_judul-jadwal {
+          margin: 0px;
+        }
+        .arifubila_judul-jadwal h1 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 15px;
+        }
+        .arifubila_judul-jadwal h2 {
+          margin-top: 5px;
+          font-size: 12px;
+          font-weight: 400;
+        }
+        .arifubila_img-jadwal {
+          display: none;
+        }
+        .arifubila_img-jadwal img {
+          display: none;
+        }
+        /*END SECTION 1*/
+
+        /*SECTION 2*/
+        .arifubila_jj-sec2 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 40px;
+          width: 100%;
+        }
+        .arifubila_card-panduansampah {
+          margin-top: 20px;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .arifubila_cardpanduansampah {
+          width: 100%;
+          padding: 0px;
+        }
+        .arifubila_cardpanduansampah:hover {
+          transform: none;
+        }
+        .arifubila_cardpanduansampah h2 {
+          font-size: 15px;
+        }
+        .arifubila_cardpanduansampah p {
+          font-size: 14px;
+        }
+        /*END SECTION 2*/
+
+        /*SECTION 3*/
+        .arifubila_sec3 {
+          margin-top: 40px;
+        }
+        .arifubila_sec3 h1 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          width: 100%;
+        }
+        .arifubila_cardj {
+          width: 45%;
+        }
+        .arifubila_cardj h2 {
+          font-size: 18px;
+        }
+        .arifubila_cardj p {
+          font-size: 14px;
+        }
+        /*END SECTION 3*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="arifubila_container">
+      <nav class="arifubila_nav-container">
+        <img
+          src="img/logo tasik resik-01.png"
+          alt="eror"
+          class="arifubila_logo"
+        />
+        <div class="arifubila_hamburger" id="arifubila_hamburger">
+          <span class="arifubila_bar"></span>
+          <span class="arifubila_bar"></span>
+          <span class="arifubila_bar"></span>
+        </div>
+        <ul id="arifubila_nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="daurulang.html">Daur Ulang</a></li>
+          <li><a href="edukasi.html">Edukasi</a></li>
+          <li><a href="petasampah.html">Peta Sampah</a></li>
+        </ul>
+        <div class="arifubila_pengaduan">
+          <a href="pengaduan.html">Pengaduan</a>
+          <img src="img/pengaduan.png" alt="eror" />
+        </div>
+      </nav>
+      <!--SECTION 1-->
+      <div class="arifubila_wrapper">
+        <div class="arifubila_sec1-jadwal">
+          <div class="arifubila_judul-jadwal">
+            <h1>
+              Jadwal Pengumpulan <br />
+              Sampah
+            </h1>
+            <p>
+              Berikut adalah jadwal pengumpulan sampah di area Anda. Pastikan
+              untuk menyiapkan sampah Anda pada waktu yang telah ditentukan.
+            </p>
+          </div>
+          <div class="arifubila_img-jadwal">
+            <img src="img/jadwal.jpg" alt="eror" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END SECTION 1-->
+
+    <!--SECTION 2-->
+    <div class="arifubila_wrapper">
+      <h1 class="arifubila_jj-sec2">
+        Panduan Pengumpulan <br />
+        Sampah
+      </h1>
+      <div class="arifubila_card-panduansampah">
+        <div class="arifubila_cardpanduansampah">
+          <div class="arifubila_top-ps">
+            <h2>Pisahkan Sampah Berdasarkan Jenisnya</h2>
+          </div>
+          <div class="arifubila_bottom-ps">
+            <p>
+              &gt; Sampah Organik<br />&gt; Sampah Anorganik<br />&gt; Sampah B3
+            </p>
+          </div>
+        </div>
+        <div class="arifubila_cardpanduansampah">
+          <div class="arifubila_top-ps">
+            <h2>Gunakan Tempat Sampah Tertutup</h2>
+          </div>
+          <div class="arifubila_bottom-ps">
+            <p>
+              Pastikan tempat sampah memiliki penutup agar tidak menimbulkan bau
+              atau menarik binatang, terutama untuk sampah organik.
+            </p>
+          </div>
+        </div>
+        <div class="arifubila_cardpanduansampah">
+          <div class="arifubila_top-ps">
+            <h2>Gunakan Kantong Sampah Berwarna</h2>
+          </div>
+          <div class="arifubila_bottom-ps">
+            <p>
+              Gunakan kantong berwarna berbeda untuk setiap jenis sampah agar
+              lebih mudah dikenali
+            </p>
+          </div>
+        </div>
+        <div class="arifubila_cardpanduansampah">
+          <div class="arifubila_top-ps">
+            <h2>Lipat atau Hancurkan Sampah Besar</h2>
+          </div>
+          <div class="arifubila_bottom-ps">
+            <p>
+              Untuk sampah berukuran besar, seperti kardus atau botol plastik,
+              lipat atau hancurkan sebelum dimasukkan ke dalam tempat sampah
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--END SECTION 2-->
+
+      <!--SECTION 3-->
+      <div class="arifubila_sec3">
+        <h1>
+          Jadwal Pengumpulan <br />
+          Sampah
+        </h1>
+        <div class="arifubila_card-jadwal">
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Tawang</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Senin <br />08.00 - 12.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Cipedes</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Senin <br />13.00 - 16.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Cibereum</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Selasa <br />08.00 - 12.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Purbaratu</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Selasa <br />13.00 - 16.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Indihiang</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Rabu <br />08.00 - 12.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Bungursari</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Rabu <br />13.00 - 16.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Mangkubumi</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Kamis <br />08.00 - 12.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Kawalu</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Kamis <br />13.00 - 16.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Tamansari</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Jumat <br />08.00 - 12.00</p>
+            </div>
+          </div>
+          <div class="arifubila_cardj">
+            <div class="arifubila_top-jadwal">
+              <h2>Cihideung</h2>
+            </div>
+            <div class="arifubila_bottom-jadwal">
+              <p>Jumat <br />13.00 - 16.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+      <div class="arifubila_footer">
+        <h1>Created by Arifubila Ramadhani Sigand</h1>
+        <a href="https://www.linkedin.com/in/arifubila-ramadhani-sigand/"
+          ><img src="img/linkedin.png" alt="eror" height="40vh" />
+          <p>Arifubila Ramadhani Sigand</p></a
+        >
+        <a href="https://www.instagram.com/arifubilaa/"
+          ><img src="img/instagram.png" alt="eror" height="40vh" />
+          <p>@arifubilaa</p></a
+        >
+      </div>
+    </footer>
+    <!--END FOOTER-->
+    <script src="script.js"></script>
+  </body>
+</html>

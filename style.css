@@ -1,0 +1,446 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.arifubila_container {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 89vh;
+  color: #fff;
+  margin: 15px 28px;
+  border-radius: 20px;
+  padding: 10px 50px;
+}
+
+.arifubila_nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  align-items: center;
+}
+
+.arifubila_nav-container .arifubila_logo {
+  width: 7%;
+}
+.arifubila_hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.arifubila_hamburger .arifubila_bar {
+  width: 30px;
+  height: 3px;
+  margin: 4px 0;
+  background-color: #fff;
+}
+.arifubila_nav-container ul {
+  display: flex;
+  gap: 0.8rem;
+  padding: 12px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.arifubila_nav-container a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.arifubila_nav-container ul a:hover {
+  background-color: white;
+  transition: 0.3s;
+  color: #172a19;
+}
+
+.arifubila_pengaduan {
+  display: flex;
+  justify-content: center;
+  gap: 0.1rem;
+  font-size: 15px;
+  padding: 3px 0px;
+  border-radius: 15px;
+  background-color: #bee744;
+  color: #172a19;
+  align-items: center;
+}
+
+.arifubila_pengaduan:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arifubila_pengaduan img {
+  width: 14%;
+}
+
+/*HEADER*/
+
+.arifubila_sec1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.arifubila_judul {
+  position: absolute;
+  align-items: center;
+  bottom: 300px;
+}
+
+.arifubila_judul h1 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.arifubila_judul h2 {
+  font-size: 27px;
+  font-weight: 300;
+}
+
+.arifubila_informasi {
+  position: absolute;
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  background-color: white;
+  margin-right: 20px;
+  margin-bottom: 7px;
+  color: #172a19;
+  right: 8px;
+  padding: 50px 60px;
+  border-radius: 100px 0px 0px 0px;
+  bottom: 24px;
+}
+.arifubila_i1 {
+  margin-left: 20px;
+}
+.arifubila_i1 h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+.arifubila_i1 h2 {
+  font-size: 20px;
+}
+
+/*SECTION 2*/
+
+.arifubila_wrapper {
+  max-width: 1220px;
+  margin: 80px auto;
+}
+
+.arifubila_judul-sec2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #172a19;
+}
+
+.arifubila_card-capaian {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.arifubila_cardcp {
+  display: flex;
+  width: calc(40% - 10px);
+  height: 25vh;
+  background-color: #bee744;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.arifubila_cardcp:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.arifubila_left-cp {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  color: white;
+  background-color: #043e2c;
+  padding: 40px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.arifubila_left-cp h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.arifubila_right-cp {
+  padding: 50px 20px;
+}
+
+/*SECTION 3*/
+
+.arifubila_sec3 h1 {
+  margin-top: 90px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #172a19;
+}
+
+.arifubila_container-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+  background-color: #043e2c;
+  border-radius: 10px;
+  padding: 20px 90px;
+  margin-top: 40px;
+}
+
+.arifubila_card-fb {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  background-color: #bee744;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.arifubila_card-fb:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.arifubila_profil {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 1rem;
+  color: #172a19;
+  align-items: center;
+}
+
+.arifubila_profil img {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.arifubila_profil h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.arifubila_hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.arifubila_bar {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+#arifubila_mobile-menu.hidden {
+  display: none;
+}
+#arifubila_mobile-menu {
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+/*FOOTER*/
+.arifubila_footer {
+  background-color: #043e2c;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  padding: 20px 60px;
+  align-items: center;
+  margin-top: 5%;
+}
+.arifubila_footer h1 {
+  font-size: 18px;
+}
+.arifubila_footer a {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+/*END FOOTER*/
+
+/*RESPONSIVE MOBILE*/
+@media only screen and (max-width: 600px) {
+  /*NAVBAR*/
+  .arifubila_container {
+    padding: 0px 0px;
+    height: 60vh;
+    margin-top: 70px;
+  }
+  .arifubila_nav-container {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    background-color: #043e2c;
+    position: fixed;
+    z-index: 1;
+    padding: 13px;
+  }
+  .arifubila_nav-container ul {
+    display: none;
+  }
+  .arifubila_hamburger {
+    display: flex;
+  }
+
+  #arifubila_nav-links {
+    display: none; /* Menyembunyikan menu di layar kecil */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #043e2c;
+    width: 100%;
+    text-align: center;
+  }
+
+  #arifubila_nav-links.active {
+    display: block;
+  }
+
+  #arifubila_nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+  }
+
+  #arifubila_nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  #arifubila_nav-links li a:hover {
+    background-color: #bee744;
+  }
+  .arifubila_pengaduan {
+    display: none;
+  }
+  /*END NAVBAR*/
+
+  /*SECTION 1*/
+  .arifubila_judul h1 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .arifubila_judul h2 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .arifubila_informasi {
+    padding: 15px 20px;
+    bottom: 143px;
+    gap: 1.5rem;
+    border-radius: 30px 0px 0px 0px;
+  }
+  .arifubila_i1 h1 {
+    font-size: 20px;
+  }
+  .arifubila_i1 h2 {
+    font-size: 10px;
+  }
+  /*END SECTION 1*/
+
+  /*SECTION 2*/
+  .arifubila_wrapper {
+    overflow: hidden;
+    margin-top: 170px;
+    max-width: fit-content;
+    margin: 20px 20px;
+  }
+  .arifubila_judul-sec2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  .arifubila_card-capaian {
+    gap: 1.5rem;
+  }
+  .arifubila_cardcp {
+    width: 100%;
+    height: 118px;
+    font-size: 12px;
+  }
+  .arifubila_cardcp:hover {
+    transform: none;
+  }
+  .arifubila_left-cp {
+    padding: 30px;
+  }
+  .arifubila_left-cp h1 {
+    font-size: 40px;
+  }
+  .arifubila_right-cp h3 {
+    font-weight: 500;
+  }
+  .arifubila_p-cp {
+    font-size: 8px;
+  }
+  /*END SECTION 2*/
+
+  /*SECTION 3*/
+  .arifubila_sec3 h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  .arifubila_container-feedback {
+    padding: 15px 15px;
+    gap: 0.7rem;
+  }
+  .arifubila_card-fb {
+    width: 80%;
+    padding: 15px;
+  }
+  .arifubila_card-fb:hover {
+    transform: none;
+  }
+  .arifubila_profil h3 {
+    font-size: 15px;
+  }
+  .arifubila_card-fb p {
+    font-size: 12px;
+  }
+  .arifubila_footer {
+    margin-top: 10%;
+  }
+  .arifubila_footer h1 {
+    font-size: 15px;
+  }
+  .arifubila_footer a p {
+    display: none;
+  }
+  /*END FOOTER*/
+}
+/*END RESPONSIVE MOBILE*/

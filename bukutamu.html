@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasik Resik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .arifubila_container {
+        background-image: none;
+        background-color: #043e2c;
+        height: 94vh;
+      }
+      /*SECTION 1*/
+      .arifubila_sec1-bt {
+        display: flex;
+        gap: 4rem;
+      }
+      .arifubila_j1-bt {
+        width: 50%;
+      }
+      .arifubila_j1-bt h1 {
+        font-size: 40px;
+      }
+      .arifubila_j1-bt p {
+        font-size: 15px;
+      }
+      .arifubila_card-bt {
+        background-color: #bee744;
+        width: 55%;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .arifubila_card-bt h1 {
+        text-align: center;
+        color: #172a19;
+        margin-bottom: 5%;
+      }
+      .arifubila_input-bt {
+        display: flex;
+        flex-direction: column;
+        color: #172a19;
+        font-size: 18px;
+        margin-top: 3%;
+        font-weight: 600;
+      }
+      .arifubila_input-bt input {
+        height: 20px;
+        border-radius: 7px;
+        padding: 5px;
+        border: 1px solid transparent;
+      }
+      .arifubila_input-bt label {
+        font-size: 17px;
+        margin-bottom: 8px;
+      }
+      .arifubila_input-bt textarea {
+        height: 100px;
+        border-radius: 7px;
+        padding: 5px;
+        border: 1px solid transparent;
+      }
+      .arifubila_overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+      }
+      .arifubila_alert-box {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        color: #172a19;
+        width: 20%;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        z-index: 1001;
+      }
+      .arifubila_alert-box p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .arifubila_alert-box button {
+        margin-top: 10px;
+        background-color: #043e2c;
+        padding: 8px 16px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      .arifubila_alert-box button:hover {
+        background-color: #086346;
+        cursor: pointer;
+      }
+      .arifubila_card-bt button {
+        margin-top: 3%;
+        padding: 10px 35px;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: not-allowed;
+      }
+
+      .arifubila_card-bt form:valid button {
+        background-color: #043e2c;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+      /*END SECTION 1*/
+
+      /*RESPONSIVE*/
+      @media only screen and (max-width: 600px) {
+        .arifubila_container {
+          height: auto;
+          padding: 5px;
+        }
+        .arifubila_j1-bt {
+          width: 100%;
+        }
+        .arifubila_j1-bt h1 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .arifubila_j1-bt p {
+          font-size: 14px;
+        }
+        .arifubila_sec1-bt {
+          flex-direction: column;
+          gap: 2rem;
+          align-items: center;
+        }
+        .arifubila_card-bt {
+          width: 85%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="arifubila_container">
+      <nav class="arifubila_nav-container">
+        <img
+          src="img/logo tasik resik-01.png"
+          alt="eror"
+          class="arifubila_logo"
+        />
+        <div class="arifubila_hamburger" id="arifubila_hamburger">
+          <span class="arifubila_bar"></span>
+          <span class="arifubila_bar"></span>
+          <span class="arifubila_bar"></span>
+        </div>
+        <ul id="arifubila_nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="daurulang.html">Daur Ulang</a></li>
+          <li><a href="edukasi.html">Edukasi</a></li>
+          <li><a href="petasampah.html">Peta Sampah</a></li>
+        </ul>
+        <div class="arifubila_pengaduan">
+          <a href="pengaduan.html">Pengaduan</a>
+          <img src="img/pengaduan.png" alt="eror" />
+        </div>
+      </nav>
+      <!--SECTION 1-->
+      <div class="arifubila_wrapper">
+        <div class="arifubila_sec1-bt">
+          <div class="arifubila_j1-bt">
+            <h1>Buku Tamu</h1>
+            <p>
+              Kami ingin mendengar pendapat, saran, atau pengalaman Anda terkait
+              pengelolaan sampah dan daur ulang. Silakan isi buku tamu di
+              samping ini:
+            </p>
+          </div>
+          <div class="arifubila_card-bt">
+            <h1>Buku Tamu</h1>
+            <form id="arifubila_feedback-form" onsubmit="return validateForm()">
+              <div class="arifubila_input-bt">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama" required />
+              </div>
+              <div class="arifubila_input-bt">
+                <label for="email">Alamat Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="arifubila_input-bt">
+                <label for="pesan">Pesan atau Saran</label>
+                <textarea name="pesan" id="pesan" required></textarea>
+              </div>
+              <button type="submit" id="arifubila_submit-btn" disabled>
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="arifubila_overlay" id="arifubila_overlay">
+          <div class="arifubila_alert-box">
+            <p>Pesan telah dikirim!</p>
+            <button onclick="closeCustomAlert()">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END SECTION 1-->
+    <!--FOOTER-->
+    <footer>
+      <div class="arifubila_footer">
+        <h1>Created by Arifubila Ramadhani Sigand</h1>
+        <a href="https://www.linkedin.com/in/arifubila-ramadhani-sigand/"
+          ><img src="img/linkedin.png" alt="eror" height="40vh" />
+          <p>Arifubila Ramadhani Sigand</p></a
+        >
+        <a href="https://www.instagram.com/arifubilaa/"
+          ><img src="img/instagram.png" alt="eror" height="40vh" />
+          <p>@arifubilaa</p></a
+        >
+      </div>
+    </footer>
+    <!--END FOOTER-->
+    <script src="script.js">
+      // Mengaktifkan tombol jika semua form terisi
+      const form = document.getElementById("arifubila_feedback-form");
+      const submitButton = document.getElementById("arifubila_submit-btn");
+
+      form.addEventListener("input", function () {
+        // Cek form terisi semua
+        const isFormValid = form.checkValidity();
+        submitButton.disabled = !isFormValid;
+      });
+
+      // Menampilkan alert
+      function showCustomAlert() {
+        document.getElementById("arifubila_overlay").style.display = "block";
+      }
+
+      // Tutup alert
+      function closeCustomAlert() {
+        document.getElementById("arifubila_overlay").style.display = "none";
+      }
+
+      // percabangan alert
+      function validateForm() {
+        if (form.checkValidity()) {
+          showCustomAlert();
+          return false;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>

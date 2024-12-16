@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasik Resik</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /*SECTION 1*/
+      .arifubila_container {
+        background-image: none;
+        background-color: #043e2c;
+      }
+      .arifubila_sec1-edu {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .arifubila_i1-edu {
+        background-color: white;
+        width: 150%;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .arifubila_j1-edu h1 {
+        font-size: 40px;
+        font-weight: 600;
+        width: 70%;
+      }
+      .arifubila_j1-edu p {
+        margin-top: 20px;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .arifubila_i1-edu img {
+        width: 100%;
+      }
+      /*END SECTION 1*/
+
+      /*SECTION 2*/
+      .arifubila_sec2j-edu {
+        background-color: #043e2c;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        gap: 4rem;
+        margin-top: 10%;
+        color: white;
+        align-items: center;
+      }
+      .arifubila_sec2j-edu p {
+        font-size: 17px;
+        font-weight: 400;
+      }
+      .arifubila_j2-edu {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #bee744;
+        width: 25%;
+      }
+      .arifubila_j2-edu h2 {
+        font-size: 30px;
+        font-weight: 500;
+        color: #172a19;
+      }
+
+      .arifubila_cards2-edu {
+        display: flex;
+        margin-top: 20px;
+        gap: 2rem;
+      }
+      .arifubila_card-edu1 {
+        width: 50%;
+        padding: 10px;
+        height: 41vh;
+        border-radius: 10px 10px 90px 10px;
+        background-color: #bee744;
+      }
+      .arifubila_card-edu1:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      .arifubila_card-edu2:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        cursor: pointer;
+      }
+      .arifubila_card-edu1 h2 {
+        font-size: 17px;
+        font-weight: 600;
+      }
+      .arifubila_card-edu1 p {
+        margin: 10px 0px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .arifubila_card-edu1 img {
+        width: 100%;
+        border-radius: 10px 10px 75px 10px;
+        aspect-ratio: 16/9;
+      }
+      .arifubila_card-edu2 img {
+        width: 30%;
+        aspect-ratio: 16/9;
+      }
+      .arifubila_card-edu2 {
+        position: relative;
+        top: 30px;
+        width: 50%;
+        padding: 10px;
+        border-radius: 90px 10px 10px 10px;
+        background-color: #bee744;
+      }
+      .arifubila_card-edu2 img {
+        width: 100%;
+        border-radius: 75px 10px 10px 10px;
+        aspect-ratio: 16/9;
+      }
+      .arifubila_card-edu2 h2 {
+        font-size: 17px;
+        font-weight: 600;
+      }
+      .arifubila_card-edu2 p {
+        margin: 10px 0px;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      /*END SECTION 2*/
+
+      /*SECTION 3*/
+      .arifubila_sec3-edu {
+        background-color: #bee744;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10%;
+      }
+      .arifubila_sec3j-edu {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        color: #172a19;
+        margin-bottom: 20px;
+      }
+      .arifubila_sec3j-edu h2 {
+        width: 50%;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .arifubila_sec3j-edu p {
+        font-size: 17px;
+        font-weight: 500;
+        color: #172a19;
+      }
+      .arifubila_card-sec3-edu {
+        display: flex;
+        gap: 2rem;
+      }
+      .arifubila_sec3i1-edu {
+        background-image: url(img/tpa.jpg);
+        background-repeat: no-repeat;
+        width: 40%;
+        padding: 10px;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+      .arifubila_sec3i1-edu h2 {
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 10px black;
+        position: relative;
+        top: 94%;
+      }
+      .arifubila_sec3i2-edu h2 {
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 10px black;
+        position: relative;
+        top: 94%;
+      }
+      .arifubila_sec3i3-edu h2 {
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 10px black;
+        position: relative;
+        top: 94%;
+      }
+      .arifubila_sec3i2-edu {
+        background-image: url(img/sda.jpg);
+        background-repeat: no-repeat;
+        width: 40%;
+
+        padding: 10px;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+      .arifubila_sec3i3-edu {
+        background-image: url(img/panel\ surya.jpg);
+        background-repeat: no-repeat;
+        width: 40%;
+        padding: 10px;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+      }
+      /*END SECTION 3*/
+
+      /*RESPONSIVE*/
+      @media only screen and (max-width: 600px) {
+        .arifubila_container {
+          height: 7%;
+          padding: 5px;
+        }
+        .arifubila_i1-edu {
+          display: none;
+        }
+        .arifubila_j1-edu h1 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 20px;
+        }
+        .arifubila_j1-edu p {
+          font-size: 14px;
+        }
+
+        /*SECTION 1*/
+        .arifubila_sec3j-edu h2 {
+          font-size: 20px;
+        }
+        .arifubila_sec3j-edu p {
+          font-size: 12px;
+          width: 70%;
+        }
+        .arifubila_sec3j-edu {
+          gap: 1rem;
+        }
+        .arifubila_card-sec3-edu {
+          flex-wrap: wrap;
+        }
+        .arifubila_sec3i1-edu h2 {
+          font-size: 12px;
+          top: 85%;
+        }
+        .arifubila_sec3i2-edu h2 {
+          font-size: 12px;
+          top: 85%;
+        }
+        .arifubila_sec3i3-edu h2 {
+          font-size: 12px;
+          top: 85%;
+        }
+        /*END SECTION 1*/
+
+        /*SECTION 2*/
+        .arifubila_j2-edu {
+          width: 50%;
+        }
+        .arifubila_j2-edu h2 {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .arifubila_sec2j-edu {
+          gap: 1rem;
+        }
+        .arifubila_cards2-edu {
+          flex-wrap: wrap;
+        }
+        .arifubila_sec2j-edu p {
+          font-size: 12px;
+        }
+        .arifubila_sec3i1-edu {
+          width: 100%;
+          object-fit: contain;
+          height: 20vh;
+        }
+        .arifubila_sec3i2-edu {
+          width: 100%;
+          object-fit: contain;
+          height: 20vh;
+        }
+        .arifubila_sec3i3-edu {
+          width: 100%;
+          object-fit: contain;
+          height: 20vh;
+        }
+        .arifubila_card-edu1 {
+          width: 90%;
+          height: auto;
+        }
+        .arifubila_card-edu1:hover {
+          transform: none;
+        }
+        .arifubila_card-edu2:hover {
+          transform: none;
+        }
+        .arifubila_card-edu2 {
+          width: 90%;
+          height: auto;
+          margin-bottom: 60px;
+        }
+        .arifubila_card-edu1 h2 {
+          font-size: 14px;
+        }
+        .arifubila_card-edu1 p {
+          font-size: 12px;
+        }
+        .arifubila_card-edu2 h2 {
+          font-size: 14px;
+        }
+        .arifubila_card-edu2 p {
+          font-size: 12px;
+        }
+        .arifubila_cards2-edu {
+          gap: 1px;
+          align-items: center;
+          flex-direction: column;
+        }
+        .arifubila_card-edu1 img {
+          object-fit: fill;
+        }
+        .arifubila_card-edu2 img {
+          object-fit: fill;
+        }
+        /*END SECTION 2*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="arifubila_container">
+      <nav class="arifubila_nav-container">
+        <img
+          src="img/logo tasik resik-01.png"
+          alt="eror"
+          class="arifubila_logo"
+        />
+        <div class="arifubila_hamburger" id="arifubila_hamburger">
+          <span class="arifubila_bar"></span>
+          <span class="arifubila_bar"></span>
+          <span class="arifubila_bar"></span>
+        </div>
+        <ul id="arifubila_nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="jadwal.html">Jadwal</a></li>
+          <li><a href="daurulang.html">Daur Ulang</a></li>
+          <li><a href="edukasi.html">Edukasi</a></li>
+          <li><a href="petasampah.html">Peta Sampah</a></li>
+        </ul>
+        <div class="arifubila_pengaduan">
+          <a href="pengaduan.html">Pengaduan</a>
+          <img src="img/pengaduan.png" alt="eror" />
+        </div>
+      </nav>
+      <!--HEADER-->
+      <div class="arifubila_wrapper">
+        <div class="arifubila_sec1-edu">
+          <div class="arifubila_j1-edu">
+            <h1>Dukung Gerakan Daur Ulang Digital</h1>
+            <p>
+              Daur ulang digital bukan hanya tanggung jawab individu, tetapi
+              juga tanggung jawab bersama. Ayo bergabung dalam gerakan untuk
+              membuat dunia lebih hijau dan lebih aman dengan mendaur ulang
+              perangkat dan data Anda dengan bijak.
+            </p>
+          </div>
+          <div class="arifubila_i1-edu">
+            <img src="img/edu.jpg" alt="eror" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END HEADER-->
+
+    <!--SECTION 3-->
+    <div class="arifubila_wrapper">
+      <div class="arifubila_sec3-edu">
+        <div class="arifubila_sec3j-edu">
+          <h2>Mengapa Daur Ulang Penting?</h2>
+          <p>
+            Daur ulang memainkan peran penting dalam menjaga keseimbangan
+            lingkungan dan keberlanjutan sumber daya. Berikut adalah alasan
+            mengapa daur ulang sangat penting bagi kita semua
+          </p>
+        </div>
+        <div class="arifubila_card-sec3-edu">
+          <div class="arifubila_sec3i1-edu">
+            <h2>Mengurangi Limbah di TPA</h2>
+          </div>
+          <div class="arifubila_sec3i2-edu">
+            <h2>Menghemat Sumber Daya Alam</h2>
+          </div>
+          <div class="arifubila_sec3i3-edu">
+            <h2>Mengurangi Emisi Gas Rumah Kaca</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END SECTION 3-->
+
+    <!--SECTION 2-->
+    <div class="arifubila_wrapper">
+      <div class="arifubila_sec2j-edu">
+        <div class="arifubila_j2-edu">
+          <h2>Program Edukasi dan Pelatihan</h2>
+        </div>
+        <p>
+          Tasik Resik hadir untuk membantu meningkatkan kesadaran masyarakat
+          <br />
+          tentang pentingnya pengelolaan sampah melalui berbagai program <br />
+          edukasi dan pelatihan.
+        </p>
+      </div>
+      <div class="arifubila_cards2-edu">
+        <div class="arifubila_card-edu1">
+          <h2>Daur Ulang Kreatif</h2>
+          <p>
+            Keterampilan kreatif dalam membuat kerajinan tangan atau produk dari
+            bahan bekas yang bisa digunakan kembali.
+          </p>
+          <img class="arifubila_img-edu" src="img/daur ulang6.jpg" alt="eror" />
+        </div>
+        <div class="arifubila_card-edu2">
+          <img src="img/daur ulang3.jpg" alt="eror" />
+          <h2>Manajemen Sampah di Rumah</h2>
+          <p>
+            Tips dan trik mengurangi penggunaan barang sekali pakai, pengomposan
+            di rumah, serta membuat sampah yang minim untuk dibuang.
+          </p>
+        </div>
+        <div class="arifubila_card-edu1">
+          <h2>Pelatihan Pengomposan</h2>
+          <p>
+            Teori dasar pengomposan, bahan yang bisa dan tidak bisa dijadikan
+            kompos, serta langkah-langkah membuat kompos.
+          </p>
+          <img src="img/daur ulang4.jpg" alt="" />
+        </div>
+        <div class="arifubila_card-edu2">
+          <img src="img/daur ulang5.jpg" alt="" />
+          <h2>Bahaya Sampah Plastik</h2>
+          <p>
+            Dampak plastik terhadap ekosistem, pentingnya mengurangi penggunaan
+            plastik, dan alternatif ramah lingkungan.
+          </p>
+        </div>
+      </div>
+      <!--END SECTION 2-->
+    </div>
+    <!--FOOTER-->
+    <footer>
+      <div class="arifubila_footer">
+        <h1>Created by Arifubila Ramadhani Sigand</h1>
+        <a href="https://www.linkedin.com/in/arifubila-ramadhani-sigand/"
+          ><img src="img/linkedin.png" alt="eror" height="40vh" />
+          <p>Arifubila Ramadhani Sigand</p></a
+        >
+        <a href="https://www.instagram.com/arifubilaa/"
+          ><img src="img/instagram.png" alt="eror" height="40vh" />
+          <p>@arifubilaa</p></a
+        >
+      </div>
+    </footer>
+    <!--END FOOTER-->
+    <script src="script.js"></script>
+  </body>
+</html>
